@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>chassis_display</class>
+ <widget class="QDialog" name="chassis_display">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>739</width>
+    <height>572</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CHASSIS_PARA_DISPLAY</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <widget class="QFrame" name="MOTOR">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>461</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>10</y>
+      <width>96</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Motor Display</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>33</y>
+      <width>349</width>
+      <height>283</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Parameter</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Motor FL</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Motor BL</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>current pos</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="FLCPOS"/>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLineEdit" name="BLCPOS"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>target pos</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="FLTPOS"/>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLineEdit" name="BLTPOS"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>current vel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="FLCVEL"/>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLineEdit" name="BLCVEL"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>target vel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="FLTVEL"/>
+     </item>
+     <item row="4" column="2">
+      <widget class="QLineEdit" name="BLTVEL"/>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>profile vel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="FLPVEL"/>
+     </item>
+     <item row="5" column="2">
+      <widget class="QLineEdit" name="BLPVEL"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>end vel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="FLEVEL"/>
+     </item>
+     <item row="6" column="2">
+      <widget class="QLineEdit" name="BLEVEL"/>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>profile acc</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLineEdit" name="FLPACC"/>
+     </item>
+     <item row="7" column="2">
+      <widget class="QLineEdit" name="BLPACC"/>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>profile dec</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLineEdit" name="FLPDEC"/>
+     </item>
+     <item row="8" column="2">
+      <widget class="QLineEdit" name="BLPDEC"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="CHASSIS">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>461</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>0</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Chassis Display</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>421</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string>Parameter</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_15">
+       <property name="text">
+        <string>ordinate x</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_16">
+       <property name="text">
+        <string>ordinate y</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="label_17">
+       <property name="text">
+        <string>ordinate sita</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>421</width>
+      <height>95</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_18">
+       <property name="text">
+        <string>CURRENT</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="CURRENTX">
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLineEdit" name="CURRENTY"/>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLineEdit" name="CURRENTS"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_19">
+       <property name="text">
+        <string>TRACKING</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="TRACKX"/>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLineEdit" name="TRACKY"/>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLineEdit" name="TRACKS"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_20">
+       <property name="text">
+        <string>DESTINATE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="DESTX"/>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLineEdit" name="DESTY"/>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLineEdit" name="DESTS"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="OTHER">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>10</y>
+     <width>261</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>141</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>OTHER PARAMETER</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="CPPNUM">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>30</y>
+      <width>113</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="AIMNUM">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>70</y>
+      <width>113</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CPP NUM</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>AIM NUM</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="OPERATE">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>420</y>
+     <width>261</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>231</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_4">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="OPENButton">
+       <property name="text">
+        <string>OPEN</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="CLOSEButton">
+       <property name="text">
+        <string>CLOSE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="STARTButton">
+       <property name="text">
+        <string>START</string>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="STOPButton">
+       <property name="text">
+        <string>STOP</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="PLANButton">
+       <property name="text">
+        <string>PLANNING</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="TRACKButton">
+       <property name="text">
+        <string>TRACKING</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="ETHERCAT">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>180</y>
+     <width>261</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_24">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>10</y>
+      <width>71</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ETHERCAT</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>OPENButton</tabstop>
+  <tabstop>CLOSEButton</tabstop>
+  <tabstop>STARTButton</tabstop>
+  <tabstop>STOPButton</tabstop>
+  <tabstop>PLANButton</tabstop>
+  <tabstop>TRACKButton</tabstop>
+  <tabstop>AIMNUM</tabstop>
+  <tabstop>CPPNUM</tabstop>
+  <tabstop>CURRENTX</tabstop>
+  <tabstop>CURRENTY</tabstop>
+  <tabstop>CURRENTS</tabstop>
+  <tabstop>TRACKX</tabstop>
+  <tabstop>TRACKY</tabstop>
+  <tabstop>TRACKS</tabstop>
+  <tabstop>DESTX</tabstop>
+  <tabstop>DESTY</tabstop>
+  <tabstop>DESTS</tabstop>
+  <tabstop>FLCPOS</tabstop>
+  <tabstop>BLCPOS</tabstop>
+  <tabstop>FLTPOS</tabstop>
+  <tabstop>BLTPOS</tabstop>
+  <tabstop>FLCVEL</tabstop>
+  <tabstop>BLCVEL</tabstop>
+  <tabstop>FLTVEL</tabstop>
+  <tabstop>BLTVEL</tabstop>
+  <tabstop>FLPVEL</tabstop>
+  <tabstop>BLPVEL</tabstop>
+  <tabstop>FLEVEL</tabstop>
+  <tabstop>BLEVEL</tabstop>
+  <tabstop>FLPACC</tabstop>
+  <tabstop>BLPACC</tabstop>
+  <tabstop>FLPDEC</tabstop>
+  <tabstop>BLPDEC</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
